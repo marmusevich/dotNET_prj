@@ -1,0 +1,841 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="iotDataSet" targetNamespace="http://tempuri.org/iotDataSet.xsd" xmlns:mstns="http://tempuri.org/iotDataSet.xsd" xmlns="http://tempuri.org/iotDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="iotConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="iotConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ITexport.Properties.Settings.GlobalReference.Default.iotConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DOGTableAdapter" GeneratorDataComponentClassName="DOGTableAdapter" Name="DOG" UserDataComponentName="DOGTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="iotConnectionString (Settings)" DbObjectName="iot.dbo.DOG" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[DOG] WHERE (([KOBJ] = @Original_KOBJ) AND ([UNDOG] = @Original_UNDOG) AND ([TOBJ] = @Original_TOBJ) AND ((@IsNull_ORG_DOG = 1 AND [ORG_DOG] IS NULL) OR ([ORG_DOG] = @Original_ORG_DOG)) AND ([ORG] = @Original_ORG) AND ((@IsNull_ORG2 = 1 AND [ORG2] IS NULL) OR ([ORG2] = @Original_ORG2)) AND ([NBNK] = @Original_NBNK) AND ([NBNK2] = @Original_NBNK2) AND ([NBNK3] = @Original_NBNK3) AND ((@IsNull_KDGT = 1 AND [KDGT] IS NULL) OR ([KDGT] = @Original_KDGT)) AND ([KDOG] = @Original_KDOG) AND ([KDOGP] = @Original_KDOGP) AND ((@IsNull_DDOG = 1 AND [DDOG] IS NULL) OR ([DDOG] = @Original_DDOG)) AND ((@IsNull_DDOGN = 1 AND [DDOGN] IS NULL) OR ([DDOGN] = @Original_DDOGN)) AND ((@IsNull_DDOGK = 1 AND [DDOGK] IS NULL) OR ([DDOGK] = @Original_DDOGK)) AND ([KDGO] = @Original_KDGO) AND ([KDGD] = @Original_KDGD) AND ([POBJ] = @Original_POBJ) AND ((@IsNull_NOMPP_DOG = 1 AND [NOMPP_DOG] IS NULL) OR ([NOMPP_DOG] = @Original_NOMPP_DOG)) AND ((@IsNull_NOMPP = 1 AND [NOMPP] IS NULL) OR ([NOMPP] = @Original_NOMPP)) AND ([KDO1] = @Original_KDO1) AND ([KDO2] = @Original_KDO2) AND ([KDO3] = @Original_KDO3) AND ([KDO4] = @Original_KDO4) AND ([KDO5] = @Original_KDO5) AND ([KDO6] = @Original_KDO6) AND ([KDO7] = @Original_KDO7) AND ([KDO8] = @Original_KDO8) AND ([KDO9] = @Original_KDO9) AND ([KDOA] = @Original_KDOA) AND ([KDDO] = @Original_KDDO) AND ([KAU] = @Original_KAU) AND ([PR_OSN] = @Original_PR_OSN) AND ([KSD1] = @Original_KSD1) AND ([KSD2] = @Original_KSD2) AND ([KSBG] = @Original_KSBG) AND ([PR_ZAKDOG] = @Original_PR_ZAKDOG) AND ([PR_ISPDOG] = @Original_PR_ISPDOG) AND ([FILEDOG] = @Original_FILEDOG) AND ((@IsNull_CEH = 1 AND [CEH] IS NULL) OR ([CEH] = @Original_CEH)) AND ((@IsNull_N_KDK = 1 AND [N_KDK] IS NULL) OR ([N_KDK] = @Original_N_KDK)) AND ([SROK_RLZ] = @Original_SROK_RLZ) AND ([SROK_RLZI] = @Original_SROK_RLZI) AND ([KDGS_Z] = @Original_KDGS_Z) AND ([KDGS_I] = @Original_KDGS_I) AND ([KVDR] = @Original_KVDR) AND ([COMM] = @Original_COMM) AND ([KDGV] = @Original_KDGV) AND ((@IsNull_DDGD = 1 AND [DDGD] IS NULL) OR ([DDGD] = @Original_DDGD)) AND ((@IsNull_KVAL = 1 AND [KVAL] IS NULL) OR ([KVAL] = @Original_KVAL)) AND ((@IsNull_KVAL_R = 1 AND [KVAL_R] IS NULL) OR ([KVAL_R] = @Original_KVAL_R)) AND ([KKVT_R] = @Original_KKVT_R) AND ([SUMMA] = @Original_SUMMA) AND ([SUMMA_R] = @Original_SUMMA_R) AND ([SUMMA_N] = @Original_SUMMA_N) AND ([SUMMA_NR] = @Original_SUMMA_NR) AND ([SUMMA_SP] = @Original_SUMMA_SP) AND ([SUMMA_SPR] = @Original_SUMMA_SPR) AND ([SUMMA_SPF] = @Original_SUMMA_SPF) AND ([SUMMA_SPFR] = @Original_SUMMA_SPFR) AND ([SUMMA_RLZ] = @Original_SUMMA_RLZ) AND ([SUMMA_RLZI] = @Original_SUMMA_RLZI) AND ([KDGU] = @Original_KDGU) AND ([DGO_P] = @Original_DGO_P) AND ([PR_ARH] = @Original_PR_ARH) AND ([KCE1] = @Original_KCE1) AND ([TIP_RDO] = @Original_TIP_RDO) AND ((@IsNull_DATE_RLZ = 1 AND [DATE_RLZ] IS NULL) OR ([DATE_RLZ] = @Original_DATE_RLZ)) AND ((@IsNull_DATE_RLZI = 1 AND [DATE_RLZI] IS NULL) OR ([DATE_RLZI] = @Original_DATE_RLZI)) AND ([KOR6] = @Original_KOR6) AND ([STDCURR] = @Original_STDCURR) AND ((@IsNull_KFPU = 1 AND [KFPU] IS NULL) OR ([KFPU] = @Original_KFPU)) AND ([FIO_D] = @Original_FIO_D) AND ((@IsNull_DATE_D = 1 AND [DATE_D] IS NULL) OR ([DATE_D] = @Original_DATE_D)) AND ([FIO_O] = @Original_FIO_O) AND ((@IsNull_DATE_K = 1 AND [DATE_K] IS NULL) OR ([DATE_K] = @Original_DATE_K)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOBJ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_UNDOG" Precision="10" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="UNDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_TOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TOBJ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORG_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG_DOG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ORG_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG_DOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ORG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORG2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ORG2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NBNK" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NBNK2" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NBNK3" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KDGT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KDGT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGT" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDOGP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOGP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDOG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDOG" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDOGN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDOGN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDOGN" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDOGK" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDOGK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDOGK" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGD" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_POBJ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="POBJ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOMPP_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOMPP_DOG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NOMPP_DOG" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP_DOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOMPP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOMPP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NOMPP" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDO1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDOA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDDO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KAU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KAU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_OSN" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_OSN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KSD1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KSD2" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KSBG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSBG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_ZAKDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ZAKDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_ISPDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ISPDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FILEDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FILEDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CEH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEH" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CEH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_N_KDK" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="N_KDK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_N_KDK" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="N_KDK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_SROK_RLZ" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_SROK_RLZI" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDGS_Z" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_Z" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDGS_I" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_I" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KVDR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KVDR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_COMM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGV" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDGD" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDGD" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDGD" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDGD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KVAL" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KVAL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_KVAL" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KVAL_R" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KVAL_R" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_KVAL_R" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL_R" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KKVT_R" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KKVT_R" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_R" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_R" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_N" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_N" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_NR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_NR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SP" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SPR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SPF" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SPFR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPFR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_RLZ" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_RLZI" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDGU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_DGO_P" Precision="6" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="DGO_P" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_ARH" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ARH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KCE1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KCE1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_TIP_RDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIP_RDO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_RLZ" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_RLZ" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_RLZ" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_RLZI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_RLZI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_RLZI" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KOR6" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOR6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_STDCURR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STDCURR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KFPU" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KFPU" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KFPU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KFPU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FIO_D" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_D" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_D" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_D" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_D" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_D" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FIO_O" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_O" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_K" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_K" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_K" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_K" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[DOG] ([KOBJ], [UNDOG], [TOBJ], [ORG_DOG], [ORG], [ORG2], [NBNK], [NBNK2], [NBNK3], [KDGT], [KDOG], [KDOGP], [DDOG], [DDOGN], [DDOGK], [KDGO], [KDGD], [POBJ], [NOMPP_DOG], [NOMPP], [KDO1], [KDO2], [KDO3], [KDO4], [KDO5], [KDO6], [KDO7], [KDO8], [KDO9], [KDOA], [KDDO], [KAU], [PR_OSN], [KSD1], [KSD2], [KSBG], [PR_ZAKDOG], [PR_ISPDOG], [FILEDOG], [CEH], [N_KDK], [SROK_RLZ], [SROK_RLZI], [KDGS_Z], [KDGS_I], [KVDR], [COMM], [KDGV], [SDOG], [DDGD], [KVAL], [KVAL_R], [KKVT_R], [SUMMA], [SUMMA_R], [SUMMA_N], [SUMMA_NR], [SUMMA_SP], [SUMMA_SPR], [SUMMA_SPF], [SUMMA_SPFR], [SUMMA_RLZ], [SUMMA_RLZI], [KDGU], [DGO_P], [PR_ARH], [KDMP_STR], [KCE1], [TIP_RDO], [DATE_RLZ], [DATE_RLZI], [KOR6], [STDCURR], [KFPU], [FIO_D], [DATE_D], [FIO_O], [DATE_K]) VALUES (@KOBJ, @UNDOG, @TOBJ, @ORG_DOG, @ORG, @ORG2, @NBNK, @NBNK2, @NBNK3, @KDGT, @KDOG, @KDOGP, @DDOG, @DDOGN, @DDOGK, @KDGO, @KDGD, @POBJ, @NOMPP_DOG, @NOMPP, @KDO1, @KDO2, @KDO3, @KDO4, @KDO5, @KDO6, @KDO7, @KDO8, @KDO9, @KDOA, @KDDO, @KAU, @PR_OSN, @KSD1, @KSD2, @KSBG, @PR_ZAKDOG, @PR_ISPDOG, @FILEDOG, @CEH, @N_KDK, @SROK_RLZ, @SROK_RLZI, @KDGS_Z, @KDGS_I, @KVDR, @COMM, @KDGV, @SDOG, @DDGD, @KVAL, @KVAL_R, @KKVT_R, @SUMMA, @SUMMA_R, @SUMMA_N, @SUMMA_NR, @SUMMA_SP, @SUMMA_SPR, @SUMMA_SPF, @SUMMA_SPFR, @SUMMA_RLZ, @SUMMA_RLZI, @KDGU, @DGO_P, @PR_ARH, @KDMP_STR, @KCE1, @TIP_RDO, @DATE_RLZ, @DATE_RLZI, @KOR6, @STDCURR, @KFPU, @FIO_D, @DATE_D, @FIO_O, @DATE_K);
+SELECT KOBJ, UNDOG, TOBJ, ORG_DOG, ORG, ORG2, NBNK, NBNK2, NBNK3, KDGT, KDOG, KDOGP, DDOG, DDOGN, DDOGK, KDGO, KDGD, POBJ, NOMPP_DOG, NOMPP, KDO1, KDO2, KDO3, KDO4, KDO5, KDO6, KDO7, KDO8, KDO9, KDOA, KDDO, KAU, PR_OSN, KSD1, KSD2, KSBG, PR_ZAKDOG, PR_ISPDOG, FILEDOG, CEH, N_KDK, SROK_RLZ, SROK_RLZI, KDGS_Z, KDGS_I, KVDR, COMM, KDGV, SDOG, DDGD, KVAL, KVAL_R, KKVT_R, SUMMA, SUMMA_R, SUMMA_N, SUMMA_NR, SUMMA_SP, SUMMA_SPR, SUMMA_SPF, SUMMA_SPFR, SUMMA_RLZ, SUMMA_RLZI, KDGU, DGO_P, PR_ARH, KDMP_STR, KCE1, TIP_RDO, DATE_RLZ, DATE_RLZI, KOR6, STDCURR, KFPU, FIO_D, DATE_D, FIO_O, DATE_K FROM DOG WHERE (KDOG = @KDOG) AND (KOBJ = @KOBJ) AND (ORG = @ORG)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOBJ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@UNDOG" Precision="10" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="UNDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@TOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TOBJ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ORG_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG_DOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ORG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ORG2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NBNK" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NBNK2" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NBNK3" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGT" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDOGP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOGP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDOG" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDOGN" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDOGK" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGD" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@POBJ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="POBJ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NOMPP_DOG" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP_DOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NOMPP" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDO1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDOA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDDO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KAU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KAU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_OSN" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_OSN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KSD1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KSD2" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KSBG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSBG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_ZAKDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ZAKDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_ISPDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ISPDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FILEDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FILEDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CEH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@N_KDK" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="N_KDK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@SROK_RLZ" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@SROK_RLZI" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDGS_Z" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_Z" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDGS_I" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_I" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KVDR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KVDR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@COMM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGV" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDGD" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDGD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@KVAL" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@KVAL_R" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL_R" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KKVT_R" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KKVT_R" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_R" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_R" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_N" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_N" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_NR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_NR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SP" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SPR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SPF" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SPFR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPFR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_RLZ" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_RLZI" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDGU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@DGO_P" Precision="6" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="DGO_P" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_ARH" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ARH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDMP_STR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDMP_STR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KCE1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KCE1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@TIP_RDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIP_RDO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_RLZ" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_RLZI" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KOR6" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOR6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@STDCURR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STDCURR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KFPU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KFPU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FIO_D" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_D" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_D" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_D" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FIO_O" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_O" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_K" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_K" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT KOBJ, UNDOG, TOBJ, ORG_DOG, ORG, ORG2, NBNK, NBNK2, NBNK3, KDGT, KDOG, KDOGP, DDOG, DDOGN, DDOGK, KDGO, KDGD, POBJ, NOMPP_DOG, NOMPP, KDO1, KDO2, KDO3, KDO4, KDO5, KDO6, KDO7, KDO8, KDO9, KDOA, KDDO, KAU, PR_OSN, KSD1, KSD2, KSBG, PR_ZAKDOG, PR_ISPDOG, FILEDOG, CEH, N_KDK, SROK_RLZ, SROK_RLZI, KDGS_Z, KDGS_I, KVDR, COMM, KDGV, SDOG, DDGD, KVAL, KVAL_R, KKVT_R, SUMMA, SUMMA_R, SUMMA_N, SUMMA_NR, SUMMA_SP, SUMMA_SPR, SUMMA_SPF, SUMMA_SPFR, SUMMA_RLZ, SUMMA_RLZI, KDGU, DGO_P, PR_ARH, KDMP_STR, KCE1, TIP_RDO, DATE_RLZ, DATE_RLZI, KOR6, STDCURR, KFPU, FIO_D, DATE_D, FIO_O, DATE_K FROM dbo.DOG</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[DOG] SET [KOBJ] = @KOBJ, [UNDOG] = @UNDOG, [TOBJ] = @TOBJ, [ORG_DOG] = @ORG_DOG, [ORG] = @ORG, [ORG2] = @ORG2, [NBNK] = @NBNK, [NBNK2] = @NBNK2, [NBNK3] = @NBNK3, [KDGT] = @KDGT, [KDOG] = @KDOG, [KDOGP] = @KDOGP, [DDOG] = @DDOG, [DDOGN] = @DDOGN, [DDOGK] = @DDOGK, [KDGO] = @KDGO, [KDGD] = @KDGD, [POBJ] = @POBJ, [NOMPP_DOG] = @NOMPP_DOG, [NOMPP] = @NOMPP, [KDO1] = @KDO1, [KDO2] = @KDO2, [KDO3] = @KDO3, [KDO4] = @KDO4, [KDO5] = @KDO5, [KDO6] = @KDO6, [KDO7] = @KDO7, [KDO8] = @KDO8, [KDO9] = @KDO9, [KDOA] = @KDOA, [KDDO] = @KDDO, [KAU] = @KAU, [PR_OSN] = @PR_OSN, [KSD1] = @KSD1, [KSD2] = @KSD2, [KSBG] = @KSBG, [PR_ZAKDOG] = @PR_ZAKDOG, [PR_ISPDOG] = @PR_ISPDOG, [FILEDOG] = @FILEDOG, [CEH] = @CEH, [N_KDK] = @N_KDK, [SROK_RLZ] = @SROK_RLZ, [SROK_RLZI] = @SROK_RLZI, [KDGS_Z] = @KDGS_Z, [KDGS_I] = @KDGS_I, [KVDR] = @KVDR, [COMM] = @COMM, [KDGV] = @KDGV, [SDOG] = @SDOG, [DDGD] = @DDGD, [KVAL] = @KVAL, [KVAL_R] = @KVAL_R, [KKVT_R] = @KKVT_R, [SUMMA] = @SUMMA, [SUMMA_R] = @SUMMA_R, [SUMMA_N] = @SUMMA_N, [SUMMA_NR] = @SUMMA_NR, [SUMMA_SP] = @SUMMA_SP, [SUMMA_SPR] = @SUMMA_SPR, [SUMMA_SPF] = @SUMMA_SPF, [SUMMA_SPFR] = @SUMMA_SPFR, [SUMMA_RLZ] = @SUMMA_RLZ, [SUMMA_RLZI] = @SUMMA_RLZI, [KDGU] = @KDGU, [DGO_P] = @DGO_P, [PR_ARH] = @PR_ARH, [KDMP_STR] = @KDMP_STR, [KCE1] = @KCE1, [TIP_RDO] = @TIP_RDO, [DATE_RLZ] = @DATE_RLZ, [DATE_RLZI] = @DATE_RLZI, [KOR6] = @KOR6, [STDCURR] = @STDCURR, [KFPU] = @KFPU, [FIO_D] = @FIO_D, [DATE_D] = @DATE_D, [FIO_O] = @FIO_O, [DATE_K] = @DATE_K WHERE (([KOBJ] = @Original_KOBJ) AND ([UNDOG] = @Original_UNDOG) AND ([TOBJ] = @Original_TOBJ) AND ((@IsNull_ORG_DOG = 1 AND [ORG_DOG] IS NULL) OR ([ORG_DOG] = @Original_ORG_DOG)) AND ([ORG] = @Original_ORG) AND ((@IsNull_ORG2 = 1 AND [ORG2] IS NULL) OR ([ORG2] = @Original_ORG2)) AND ([NBNK] = @Original_NBNK) AND ([NBNK2] = @Original_NBNK2) AND ([NBNK3] = @Original_NBNK3) AND ((@IsNull_KDGT = 1 AND [KDGT] IS NULL) OR ([KDGT] = @Original_KDGT)) AND ([KDOG] = @Original_KDOG) AND ([KDOGP] = @Original_KDOGP) AND ((@IsNull_DDOG = 1 AND [DDOG] IS NULL) OR ([DDOG] = @Original_DDOG)) AND ((@IsNull_DDOGN = 1 AND [DDOGN] IS NULL) OR ([DDOGN] = @Original_DDOGN)) AND ((@IsNull_DDOGK = 1 AND [DDOGK] IS NULL) OR ([DDOGK] = @Original_DDOGK)) AND ([KDGO] = @Original_KDGO) AND ([KDGD] = @Original_KDGD) AND ([POBJ] = @Original_POBJ) AND ((@IsNull_NOMPP_DOG = 1 AND [NOMPP_DOG] IS NULL) OR ([NOMPP_DOG] = @Original_NOMPP_DOG)) AND ((@IsNull_NOMPP = 1 AND [NOMPP] IS NULL) OR ([NOMPP] = @Original_NOMPP)) AND ([KDO1] = @Original_KDO1) AND ([KDO2] = @Original_KDO2) AND ([KDO3] = @Original_KDO3) AND ([KDO4] = @Original_KDO4) AND ([KDO5] = @Original_KDO5) AND ([KDO6] = @Original_KDO6) AND ([KDO7] = @Original_KDO7) AND ([KDO8] = @Original_KDO8) AND ([KDO9] = @Original_KDO9) AND ([KDOA] = @Original_KDOA) AND ([KDDO] = @Original_KDDO) AND ([KAU] = @Original_KAU) AND ([PR_OSN] = @Original_PR_OSN) AND ([KSD1] = @Original_KSD1) AND ([KSD2] = @Original_KSD2) AND ([KSBG] = @Original_KSBG) AND ([PR_ZAKDOG] = @Original_PR_ZAKDOG) AND ([PR_ISPDOG] = @Original_PR_ISPDOG) AND ([FILEDOG] = @Original_FILEDOG) AND ((@IsNull_CEH = 1 AND [CEH] IS NULL) OR ([CEH] = @Original_CEH)) AND ((@IsNull_N_KDK = 1 AND [N_KDK] IS NULL) OR ([N_KDK] = @Original_N_KDK)) AND ([SROK_RLZ] = @Original_SROK_RLZ) AND ([SROK_RLZI] = @Original_SROK_RLZI) AND ([KDGS_Z] = @Original_KDGS_Z) AND ([KDGS_I] = @Original_KDGS_I) AND ([KVDR] = @Original_KVDR) AND ([COMM] = @Original_COMM) AND ([KDGV] = @Original_KDGV) AND ((@IsNull_DDGD = 1 AND [DDGD] IS NULL) OR ([DDGD] = @Original_DDGD)) AND ((@IsNull_KVAL = 1 AND [KVAL] IS NULL) OR ([KVAL] = @Original_KVAL)) AND ((@IsNull_KVAL_R = 1 AND [KVAL_R] IS NULL) OR ([KVAL_R] = @Original_KVAL_R)) AND ([KKVT_R] = @Original_KKVT_R) AND ([SUMMA] = @Original_SUMMA) AND ([SUMMA_R] = @Original_SUMMA_R) AND ([SUMMA_N] = @Original_SUMMA_N) AND ([SUMMA_NR] = @Original_SUMMA_NR) AND ([SUMMA_SP] = @Original_SUMMA_SP) AND ([SUMMA_SPR] = @Original_SUMMA_SPR) AND ([SUMMA_SPF] = @Original_SUMMA_SPF) AND ([SUMMA_SPFR] = @Original_SUMMA_SPFR) AND ([SUMMA_RLZ] = @Original_SUMMA_RLZ) AND ([SUMMA_RLZI] = @Original_SUMMA_RLZI) AND ([KDGU] = @Original_KDGU) AND ([DGO_P] = @Original_DGO_P) AND ([PR_ARH] = @Original_PR_ARH) AND ([KCE1] = @Original_KCE1) AND ([TIP_RDO] = @Original_TIP_RDO) AND ((@IsNull_DATE_RLZ = 1 AND [DATE_RLZ] IS NULL) OR ([DATE_RLZ] = @Original_DATE_RLZ)) AND ((@IsNull_DATE_RLZI = 1 AND [DATE_RLZI] IS NULL) OR ([DATE_RLZI] = @Original_DATE_RLZI)) AND ([KOR6] = @Original_KOR6) AND ([STDCURR] = @Original_STDCURR) AND ((@IsNull_KFPU = 1 AND [KFPU] IS NULL) OR ([KFPU] = @Original_KFPU)) AND ([FIO_D] = @Original_FIO_D) AND ((@IsNull_DATE_D = 1 AND [DATE_D] IS NULL) OR ([DATE_D] = @Original_DATE_D)) AND ([FIO_O] = @Original_FIO_O) AND ((@IsNull_DATE_K = 1 AND [DATE_K] IS NULL) OR ([DATE_K] = @Original_DATE_K)));
+SELECT KOBJ, UNDOG, TOBJ, ORG_DOG, ORG, ORG2, NBNK, NBNK2, NBNK3, KDGT, KDOG, KDOGP, DDOG, DDOGN, DDOGK, KDGO, KDGD, POBJ, NOMPP_DOG, NOMPP, KDO1, KDO2, KDO3, KDO4, KDO5, KDO6, KDO7, KDO8, KDO9, KDOA, KDDO, KAU, PR_OSN, KSD1, KSD2, KSBG, PR_ZAKDOG, PR_ISPDOG, FILEDOG, CEH, N_KDK, SROK_RLZ, SROK_RLZI, KDGS_Z, KDGS_I, KVDR, COMM, KDGV, SDOG, DDGD, KVAL, KVAL_R, KKVT_R, SUMMA, SUMMA_R, SUMMA_N, SUMMA_NR, SUMMA_SP, SUMMA_SPR, SUMMA_SPF, SUMMA_SPFR, SUMMA_RLZ, SUMMA_RLZI, KDGU, DGO_P, PR_ARH, KDMP_STR, KCE1, TIP_RDO, DATE_RLZ, DATE_RLZI, KOR6, STDCURR, KFPU, FIO_D, DATE_D, FIO_O, DATE_K FROM DOG WHERE (KDOG = @KDOG) AND (KOBJ = @KOBJ) AND (ORG = @ORG)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOBJ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@UNDOG" Precision="10" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="UNDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@TOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TOBJ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ORG_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG_DOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ORG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ORG2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NBNK" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NBNK2" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NBNK3" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGT" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDOGP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOGP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDOG" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDOGN" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDOGK" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGD" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@POBJ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="POBJ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NOMPP_DOG" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP_DOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@NOMPP" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDO1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO7" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDO9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO9" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDOA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDDO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KAU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KAU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_OSN" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_OSN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KSD1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KSD2" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KSBG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSBG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_ZAKDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ZAKDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_ISPDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ISPDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FILEDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FILEDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CEH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@N_KDK" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="N_KDK" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@SROK_RLZ" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@SROK_RLZI" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDGS_Z" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_Z" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDGS_I" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_I" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KVDR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KVDR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@COMM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KDGV" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SDOG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DDGD" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDGD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@KVAL" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@KVAL_R" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL_R" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KKVT_R" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KKVT_R" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_R" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_R" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_N" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_N" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_NR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_NR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SP" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SPR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SPF" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_SPFR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPFR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_RLZ" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@SUMMA_RLZI" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDGU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@DGO_P" Precision="6" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="DGO_P" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PR_ARH" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ARH" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KDMP_STR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDMP_STR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KCE1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KCE1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@TIP_RDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIP_RDO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_RLZ" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_RLZI" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@KOR6" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOR6" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@STDCURR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STDCURR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@KFPU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KFPU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FIO_D" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_D" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_D" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_D" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FIO_O" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_O" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@DATE_K" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_K" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOBJ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_UNDOG" Precision="10" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="UNDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_TOBJ" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TOBJ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORG_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG_DOG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ORG_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG_DOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ORG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORG2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ORG2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NBNK" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NBNK2" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NBNK3" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NBNK3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KDGT" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KDGT" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGT" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGT" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDOGP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOGP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDOG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDOG" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDOGN" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDOGN" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDOGN" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDOGK" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDOGK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDOGK" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDOGK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGD" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_POBJ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="POBJ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOMPP_DOG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOMPP_DOG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NOMPP_DOG" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP_DOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOMPP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOMPP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_NOMPP" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="NOMPP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDO1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO6" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO7" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO8" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO8" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDO9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDO9" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDOA" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDOA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDDO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KAU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KAU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_OSN" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_OSN" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KSD1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KSD2" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSD2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KSBG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KSBG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_ZAKDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ZAKDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_ISPDOG" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ISPDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FILEDOG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FILEDOG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CEH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEH" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_CEH" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_N_KDK" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="N_KDK" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_N_KDK" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="N_KDK" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_SROK_RLZ" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_SROK_RLZI" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="SROK_RLZI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDGS_Z" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_Z" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDGS_I" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGS_I" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KVDR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KVDR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_COMM" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMM" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KDGV" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KDGV" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DDGD" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DDGD" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DDGD" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DDGD" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KVAL" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KVAL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_KVAL" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KVAL_R" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KVAL_R" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_KVAL_R" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="KVAL_R" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KKVT_R" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KKVT_R" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_R" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_R" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_N" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_N" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_NR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_NR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SP" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SPR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SPF" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_SPFR" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_SPFR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_RLZ" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_SUMMA_RLZI" Precision="16" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="SUMMA_RLZI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KDGU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KDGU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_DGO_P" Precision="6" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="DGO_P" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_PR_ARH" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PR_ARH" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KCE1" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KCE1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_TIP_RDO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TIP_RDO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_RLZ" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_RLZ" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_RLZ" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZ" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_RLZI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_RLZI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_RLZI" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_RLZI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_KOR6" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="KOR6" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@Original_STDCURR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STDCURR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_KFPU" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="KFPU" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_KFPU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="KFPU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FIO_D" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_D" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_D" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_D" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_D" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_D" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FIO_O" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FIO_O" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATE_K" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATE_K" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_DATE_K" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="DATE_K" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="KOBJ" DataSetColumn="KOBJ" />
+              <Mapping SourceColumn="UNDOG" DataSetColumn="UNDOG" />
+              <Mapping SourceColumn="TOBJ" DataSetColumn="TOBJ" />
+              <Mapping SourceColumn="ORG_DOG" DataSetColumn="ORG_DOG" />
+              <Mapping SourceColumn="ORG" DataSetColumn="ORG" />
+              <Mapping SourceColumn="ORG2" DataSetColumn="ORG2" />
+              <Mapping SourceColumn="NBNK" DataSetColumn="NBNK" />
+              <Mapping SourceColumn="NBNK2" DataSetColumn="NBNK2" />
+              <Mapping SourceColumn="NBNK3" DataSetColumn="NBNK3" />
+              <Mapping SourceColumn="KDGT" DataSetColumn="KDGT" />
+              <Mapping SourceColumn="KDOG" DataSetColumn="KDOG" />
+              <Mapping SourceColumn="KDOGP" DataSetColumn="KDOGP" />
+              <Mapping SourceColumn="DDOG" DataSetColumn="DDOG" />
+              <Mapping SourceColumn="DDOGN" DataSetColumn="DDOGN" />
+              <Mapping SourceColumn="DDOGK" DataSetColumn="DDOGK" />
+              <Mapping SourceColumn="KDGO" DataSetColumn="KDGO" />
+              <Mapping SourceColumn="KDGD" DataSetColumn="KDGD" />
+              <Mapping SourceColumn="POBJ" DataSetColumn="POBJ" />
+              <Mapping SourceColumn="NOMPP_DOG" DataSetColumn="NOMPP_DOG" />
+              <Mapping SourceColumn="NOMPP" DataSetColumn="NOMPP" />
+              <Mapping SourceColumn="KDO1" DataSetColumn="KDO1" />
+              <Mapping SourceColumn="KDO2" DataSetColumn="KDO2" />
+              <Mapping SourceColumn="KDO3" DataSetColumn="KDO3" />
+              <Mapping SourceColumn="KDO4" DataSetColumn="KDO4" />
+              <Mapping SourceColumn="KDO5" DataSetColumn="KDO5" />
+              <Mapping SourceColumn="KDO6" DataSetColumn="KDO6" />
+              <Mapping SourceColumn="KDO7" DataSetColumn="KDO7" />
+              <Mapping SourceColumn="KDO8" DataSetColumn="KDO8" />
+              <Mapping SourceColumn="KDO9" DataSetColumn="KDO9" />
+              <Mapping SourceColumn="KDOA" DataSetColumn="KDOA" />
+              <Mapping SourceColumn="KDDO" DataSetColumn="KDDO" />
+              <Mapping SourceColumn="KAU" DataSetColumn="KAU" />
+              <Mapping SourceColumn="PR_OSN" DataSetColumn="PR_OSN" />
+              <Mapping SourceColumn="KSD1" DataSetColumn="KSD1" />
+              <Mapping SourceColumn="KSD2" DataSetColumn="KSD2" />
+              <Mapping SourceColumn="KSBG" DataSetColumn="KSBG" />
+              <Mapping SourceColumn="PR_ZAKDOG" DataSetColumn="PR_ZAKDOG" />
+              <Mapping SourceColumn="PR_ISPDOG" DataSetColumn="PR_ISPDOG" />
+              <Mapping SourceColumn="FILEDOG" DataSetColumn="FILEDOG" />
+              <Mapping SourceColumn="CEH" DataSetColumn="CEH" />
+              <Mapping SourceColumn="N_KDK" DataSetColumn="N_KDK" />
+              <Mapping SourceColumn="SROK_RLZ" DataSetColumn="SROK_RLZ" />
+              <Mapping SourceColumn="SROK_RLZI" DataSetColumn="SROK_RLZI" />
+              <Mapping SourceColumn="KDGS_Z" DataSetColumn="KDGS_Z" />
+              <Mapping SourceColumn="KDGS_I" DataSetColumn="KDGS_I" />
+              <Mapping SourceColumn="KVDR" DataSetColumn="KVDR" />
+              <Mapping SourceColumn="COMM" DataSetColumn="COMM" />
+              <Mapping SourceColumn="KDGV" DataSetColumn="KDGV" />
+              <Mapping SourceColumn="SDOG" DataSetColumn="SDOG" />
+              <Mapping SourceColumn="DDGD" DataSetColumn="DDGD" />
+              <Mapping SourceColumn="KVAL" DataSetColumn="KVAL" />
+              <Mapping SourceColumn="KVAL_R" DataSetColumn="KVAL_R" />
+              <Mapping SourceColumn="KKVT_R" DataSetColumn="KKVT_R" />
+              <Mapping SourceColumn="SUMMA" DataSetColumn="SUMMA" />
+              <Mapping SourceColumn="SUMMA_R" DataSetColumn="SUMMA_R" />
+              <Mapping SourceColumn="SUMMA_N" DataSetColumn="SUMMA_N" />
+              <Mapping SourceColumn="SUMMA_NR" DataSetColumn="SUMMA_NR" />
+              <Mapping SourceColumn="SUMMA_SP" DataSetColumn="SUMMA_SP" />
+              <Mapping SourceColumn="SUMMA_SPR" DataSetColumn="SUMMA_SPR" />
+              <Mapping SourceColumn="SUMMA_SPF" DataSetColumn="SUMMA_SPF" />
+              <Mapping SourceColumn="SUMMA_SPFR" DataSetColumn="SUMMA_SPFR" />
+              <Mapping SourceColumn="SUMMA_RLZ" DataSetColumn="SUMMA_RLZ" />
+              <Mapping SourceColumn="SUMMA_RLZI" DataSetColumn="SUMMA_RLZI" />
+              <Mapping SourceColumn="KDGU" DataSetColumn="KDGU" />
+              <Mapping SourceColumn="DGO_P" DataSetColumn="DGO_P" />
+              <Mapping SourceColumn="PR_ARH" DataSetColumn="PR_ARH" />
+              <Mapping SourceColumn="KDMP_STR" DataSetColumn="KDMP_STR" />
+              <Mapping SourceColumn="KCE1" DataSetColumn="KCE1" />
+              <Mapping SourceColumn="TIP_RDO" DataSetColumn="TIP_RDO" />
+              <Mapping SourceColumn="DATE_RLZ" DataSetColumn="DATE_RLZ" />
+              <Mapping SourceColumn="DATE_RLZI" DataSetColumn="DATE_RLZI" />
+              <Mapping SourceColumn="KOR6" DataSetColumn="KOR6" />
+              <Mapping SourceColumn="STDCURR" DataSetColumn="STDCURR" />
+              <Mapping SourceColumn="KFPU" DataSetColumn="KFPU" />
+              <Mapping SourceColumn="FIO_D" DataSetColumn="FIO_D" />
+              <Mapping SourceColumn="DATE_D" DataSetColumn="DATE_D" />
+              <Mapping SourceColumn="FIO_O" DataSetColumn="FIO_O" />
+              <Mapping SourceColumn="DATE_K" DataSetColumn="DATE_K" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="iotDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="iotDataSet" msprop:Generator_UserDSName="iotDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DOG" msprop:Generator_TableClassName="DOGDataTable" msprop:Generator_TableVarName="tableDOG" msprop:Generator_TablePropName="DOG" msprop:Generator_RowDeletingName="DOGRowDeleting" msprop:Generator_RowChangingName="DOGRowChanging" msprop:Generator_RowEvHandlerName="DOGRowChangeEventHandler" msprop:Generator_RowDeletedName="DOGRowDeleted" msprop:Generator_UserTableName="DOG" msprop:Generator_RowChangedName="DOGRowChanged" msprop:Generator_RowEvArgName="DOGRowChangeEvent" msprop:Generator_RowClassName="DOGRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="KOBJ" msprop:Generator_ColumnVarNameInTable="columnKOBJ" msprop:Generator_ColumnPropNameInRow="KOBJ" msprop:Generator_ColumnPropNameInTable="KOBJColumn" msprop:Generator_UserColumnName="KOBJ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNDOG" msprop:Generator_ColumnVarNameInTable="columnUNDOG" msprop:Generator_ColumnPropNameInRow="UNDOG" msprop:Generator_ColumnPropNameInTable="UNDOGColumn" msprop:Generator_UserColumnName="UNDOG" type="xs:decimal" />
+              <xs:element name="TOBJ" msprop:Generator_ColumnVarNameInTable="columnTOBJ" msprop:Generator_ColumnPropNameInRow="TOBJ" msprop:Generator_ColumnPropNameInTable="TOBJColumn" msprop:Generator_UserColumnName="TOBJ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORG_DOG" msprop:Generator_ColumnVarNameInTable="columnORG_DOG" msprop:Generator_ColumnPropNameInRow="ORG_DOG" msprop:Generator_ColumnPropNameInTable="ORG_DOGColumn" msprop:Generator_UserColumnName="ORG_DOG" type="xs:int" minOccurs="0" />
+              <xs:element name="ORG" msprop:Generator_ColumnVarNameInTable="columnORG" msprop:Generator_ColumnPropNameInRow="ORG" msprop:Generator_ColumnPropNameInTable="ORGColumn" msprop:Generator_UserColumnName="ORG" type="xs:int" />
+              <xs:element name="ORG2" msprop:Generator_ColumnVarNameInTable="columnORG2" msprop:Generator_ColumnPropNameInRow="ORG2" msprop:Generator_ColumnPropNameInTable="ORG2Column" msprop:Generator_UserColumnName="ORG2" type="xs:int" minOccurs="0" />
+              <xs:element name="NBNK" msprop:Generator_ColumnVarNameInTable="columnNBNK" msprop:Generator_ColumnPropNameInRow="NBNK" msprop:Generator_ColumnPropNameInTable="NBNKColumn" msprop:Generator_UserColumnName="NBNK" type="xs:short" />
+              <xs:element name="NBNK2" msprop:Generator_ColumnVarNameInTable="columnNBNK2" msprop:Generator_ColumnPropNameInRow="NBNK2" msprop:Generator_ColumnPropNameInTable="NBNK2Column" msprop:Generator_UserColumnName="NBNK2" type="xs:short" />
+              <xs:element name="NBNK3" msprop:Generator_ColumnVarNameInTable="columnNBNK3" msprop:Generator_ColumnPropNameInRow="NBNK3" msprop:Generator_ColumnPropNameInTable="NBNK3Column" msprop:Generator_UserColumnName="NBNK3" type="xs:short" />
+              <xs:element name="KDGT" msprop:Generator_ColumnVarNameInTable="columnKDGT" msprop:Generator_ColumnPropNameInRow="KDGT" msprop:Generator_ColumnPropNameInTable="KDGTColumn" msprop:Generator_UserColumnName="KDGT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDOG" msprop:Generator_ColumnVarNameInTable="columnKDOG" msprop:Generator_ColumnPropNameInRow="KDOG" msprop:Generator_ColumnPropNameInTable="KDOGColumn" msprop:Generator_UserColumnName="KDOG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDOGP" msprop:Generator_ColumnVarNameInTable="columnKDOGP" msprop:Generator_ColumnPropNameInRow="KDOGP" msprop:Generator_ColumnPropNameInTable="KDOGPColumn" msprop:Generator_UserColumnName="KDOGP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DDOG" msprop:Generator_ColumnVarNameInTable="columnDDOG" msprop:Generator_ColumnPropNameInRow="DDOG" msprop:Generator_ColumnPropNameInTable="DDOGColumn" msprop:Generator_UserColumnName="DDOG" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDOGN" msprop:Generator_ColumnVarNameInTable="columnDDOGN" msprop:Generator_ColumnPropNameInRow="DDOGN" msprop:Generator_ColumnPropNameInTable="DDOGNColumn" msprop:Generator_UserColumnName="DDOGN" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DDOGK" msprop:Generator_ColumnVarNameInTable="columnDDOGK" msprop:Generator_ColumnPropNameInRow="DDOGK" msprop:Generator_ColumnPropNameInTable="DDOGKColumn" msprop:Generator_UserColumnName="DDOGK" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="KDGO" msprop:Generator_ColumnVarNameInTable="columnKDGO" msprop:Generator_ColumnPropNameInRow="KDGO" msprop:Generator_ColumnPropNameInTable="KDGOColumn" msprop:Generator_UserColumnName="KDGO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDGD" msprop:Generator_ColumnVarNameInTable="columnKDGD" msprop:Generator_ColumnPropNameInRow="KDGD" msprop:Generator_ColumnPropNameInTable="KDGDColumn" msprop:Generator_UserColumnName="KDGD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POBJ" msprop:Generator_ColumnVarNameInTable="columnPOBJ" msprop:Generator_ColumnPropNameInRow="POBJ" msprop:Generator_ColumnPropNameInTable="POBJColumn" msprop:Generator_UserColumnName="POBJ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMPP_DOG" msprop:Generator_ColumnVarNameInTable="columnNOMPP_DOG" msprop:Generator_ColumnPropNameInRow="NOMPP_DOG" msprop:Generator_ColumnPropNameInTable="NOMPP_DOGColumn" msprop:Generator_UserColumnName="NOMPP_DOG" type="xs:short" minOccurs="0" />
+              <xs:element name="NOMPP" msprop:Generator_ColumnVarNameInTable="columnNOMPP" msprop:Generator_ColumnPropNameInRow="NOMPP" msprop:Generator_ColumnPropNameInTable="NOMPPColumn" msprop:Generator_UserColumnName="NOMPP" type="xs:short" minOccurs="0" />
+              <xs:element name="KDO1" msprop:Generator_ColumnVarNameInTable="columnKDO1" msprop:Generator_ColumnPropNameInRow="KDO1" msprop:Generator_ColumnPropNameInTable="KDO1Column" msprop:Generator_UserColumnName="KDO1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO2" msprop:Generator_ColumnVarNameInTable="columnKDO2" msprop:Generator_ColumnPropNameInRow="KDO2" msprop:Generator_ColumnPropNameInTable="KDO2Column" msprop:Generator_UserColumnName="KDO2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO3" msprop:Generator_ColumnVarNameInTable="columnKDO3" msprop:Generator_ColumnPropNameInRow="KDO3" msprop:Generator_ColumnPropNameInTable="KDO3Column" msprop:Generator_UserColumnName="KDO3">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO4" msprop:Generator_ColumnVarNameInTable="columnKDO4" msprop:Generator_ColumnPropNameInRow="KDO4" msprop:Generator_ColumnPropNameInTable="KDO4Column" msprop:Generator_UserColumnName="KDO4">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO5" msprop:Generator_ColumnVarNameInTable="columnKDO5" msprop:Generator_ColumnPropNameInRow="KDO5" msprop:Generator_ColumnPropNameInTable="KDO5Column" msprop:Generator_UserColumnName="KDO5">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO6" msprop:Generator_ColumnVarNameInTable="columnKDO6" msprop:Generator_ColumnPropNameInRow="KDO6" msprop:Generator_ColumnPropNameInTable="KDO6Column" msprop:Generator_UserColumnName="KDO6">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO7" msprop:Generator_ColumnVarNameInTable="columnKDO7" msprop:Generator_ColumnPropNameInRow="KDO7" msprop:Generator_ColumnPropNameInTable="KDO7Column" msprop:Generator_UserColumnName="KDO7">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO8" msprop:Generator_ColumnVarNameInTable="columnKDO8" msprop:Generator_ColumnPropNameInRow="KDO8" msprop:Generator_ColumnPropNameInTable="KDO8Column" msprop:Generator_UserColumnName="KDO8">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDO9" msprop:Generator_ColumnVarNameInTable="columnKDO9" msprop:Generator_ColumnPropNameInRow="KDO9" msprop:Generator_ColumnPropNameInTable="KDO9Column" msprop:Generator_UserColumnName="KDO9">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDOA" msprop:Generator_ColumnVarNameInTable="columnKDOA" msprop:Generator_ColumnPropNameInRow="KDOA" msprop:Generator_ColumnPropNameInTable="KDOAColumn" msprop:Generator_UserColumnName="KDOA">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDDO" msprop:Generator_ColumnVarNameInTable="columnKDDO" msprop:Generator_ColumnPropNameInRow="KDDO" msprop:Generator_ColumnPropNameInTable="KDDOColumn" msprop:Generator_UserColumnName="KDDO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KAU" msprop:Generator_ColumnVarNameInTable="columnKAU" msprop:Generator_ColumnPropNameInRow="KAU" msprop:Generator_ColumnPropNameInTable="KAUColumn" msprop:Generator_UserColumnName="KAU">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PR_OSN" msprop:Generator_ColumnVarNameInTable="columnPR_OSN" msprop:Generator_ColumnPropNameInRow="PR_OSN" msprop:Generator_ColumnPropNameInTable="PR_OSNColumn" msprop:Generator_UserColumnName="PR_OSN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KSD1" msprop:Generator_ColumnVarNameInTable="columnKSD1" msprop:Generator_ColumnPropNameInRow="KSD1" msprop:Generator_ColumnPropNameInTable="KSD1Column" msprop:Generator_UserColumnName="KSD1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KSD2" msprop:Generator_ColumnVarNameInTable="columnKSD2" msprop:Generator_ColumnPropNameInRow="KSD2" msprop:Generator_ColumnPropNameInTable="KSD2Column" msprop:Generator_UserColumnName="KSD2">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KSBG" msprop:Generator_ColumnVarNameInTable="columnKSBG" msprop:Generator_ColumnPropNameInRow="KSBG" msprop:Generator_ColumnPropNameInTable="KSBGColumn" msprop:Generator_UserColumnName="KSBG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PR_ZAKDOG" msprop:Generator_ColumnVarNameInTable="columnPR_ZAKDOG" msprop:Generator_ColumnPropNameInRow="PR_ZAKDOG" msprop:Generator_ColumnPropNameInTable="PR_ZAKDOGColumn" msprop:Generator_UserColumnName="PR_ZAKDOG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PR_ISPDOG" msprop:Generator_ColumnVarNameInTable="columnPR_ISPDOG" msprop:Generator_ColumnPropNameInRow="PR_ISPDOG" msprop:Generator_ColumnPropNameInTable="PR_ISPDOGColumn" msprop:Generator_UserColumnName="PR_ISPDOG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FILEDOG" msprop:Generator_ColumnVarNameInTable="columnFILEDOG" msprop:Generator_ColumnPropNameInRow="FILEDOG" msprop:Generator_ColumnPropNameInTable="FILEDOGColumn" msprop:Generator_UserColumnName="FILEDOG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CEH" msprop:Generator_ColumnVarNameInTable="columnCEH" msprop:Generator_ColumnPropNameInRow="CEH" msprop:Generator_ColumnPropNameInTable="CEHColumn" msprop:Generator_UserColumnName="CEH" type="xs:int" minOccurs="0" />
+              <xs:element name="N_KDK" msprop:Generator_ColumnVarNameInTable="columnN_KDK" msprop:Generator_ColumnPropNameInRow="N_KDK" msprop:Generator_ColumnPropNameInTable="N_KDKColumn" msprop:Generator_UserColumnName="N_KDK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SROK_RLZ" msprop:Generator_ColumnVarNameInTable="columnSROK_RLZ" msprop:Generator_ColumnPropNameInRow="SROK_RLZ" msprop:Generator_ColumnPropNameInTable="SROK_RLZColumn" msprop:Generator_UserColumnName="SROK_RLZ" type="xs:short" />
+              <xs:element name="SROK_RLZI" msprop:Generator_ColumnVarNameInTable="columnSROK_RLZI" msprop:Generator_ColumnPropNameInRow="SROK_RLZI" msprop:Generator_ColumnPropNameInTable="SROK_RLZIColumn" msprop:Generator_UserColumnName="SROK_RLZI" type="xs:short" />
+              <xs:element name="KDGS_Z" msprop:Generator_ColumnVarNameInTable="columnKDGS_Z" msprop:Generator_ColumnPropNameInRow="KDGS_Z" msprop:Generator_ColumnPropNameInTable="KDGS_ZColumn" msprop:Generator_UserColumnName="KDGS_Z">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDGS_I" msprop:Generator_ColumnVarNameInTable="columnKDGS_I" msprop:Generator_ColumnPropNameInRow="KDGS_I" msprop:Generator_ColumnPropNameInTable="KDGS_IColumn" msprop:Generator_UserColumnName="KDGS_I">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KVDR" msprop:Generator_ColumnVarNameInTable="columnKVDR" msprop:Generator_ColumnPropNameInRow="KVDR" msprop:Generator_ColumnPropNameInTable="KVDRColumn" msprop:Generator_UserColumnName="KVDR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMM" msprop:Generator_ColumnVarNameInTable="columnCOMM" msprop:Generator_ColumnPropNameInRow="COMM" msprop:Generator_ColumnPropNameInTable="COMMColumn" msprop:Generator_UserColumnName="COMM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDGV" msprop:Generator_ColumnVarNameInTable="columnKDGV" msprop:Generator_ColumnPropNameInRow="KDGV" msprop:Generator_ColumnPropNameInTable="KDGVColumn" msprop:Generator_UserColumnName="KDGV">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SDOG" msprop:Generator_ColumnVarNameInTable="columnSDOG" msprop:Generator_ColumnPropNameInRow="SDOG" msprop:Generator_ColumnPropNameInTable="SDOGColumn" msprop:Generator_UserColumnName="SDOG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DDGD" msprop:Generator_ColumnVarNameInTable="columnDDGD" msprop:Generator_ColumnPropNameInRow="DDGD" msprop:Generator_ColumnPropNameInTable="DDGDColumn" msprop:Generator_UserColumnName="DDGD" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="KVAL" msprop:Generator_ColumnVarNameInTable="columnKVAL" msprop:Generator_ColumnPropNameInRow="KVAL" msprop:Generator_ColumnPropNameInTable="KVALColumn" msprop:Generator_UserColumnName="KVAL" type="xs:short" minOccurs="0" />
+              <xs:element name="KVAL_R" msprop:Generator_ColumnVarNameInTable="columnKVAL_R" msprop:Generator_ColumnPropNameInRow="KVAL_R" msprop:Generator_ColumnPropNameInTable="KVAL_RColumn" msprop:Generator_UserColumnName="KVAL_R" type="xs:short" minOccurs="0" />
+              <xs:element name="KKVT_R" msprop:Generator_ColumnVarNameInTable="columnKKVT_R" msprop:Generator_ColumnPropNameInRow="KKVT_R" msprop:Generator_ColumnPropNameInTable="KKVT_RColumn" msprop:Generator_UserColumnName="KKVT_R">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUMMA" msprop:Generator_ColumnVarNameInTable="columnSUMMA" msprop:Generator_ColumnPropNameInRow="SUMMA" msprop:Generator_ColumnPropNameInTable="SUMMAColumn" msprop:Generator_UserColumnName="SUMMA" type="xs:decimal" />
+              <xs:element name="SUMMA_R" msprop:Generator_ColumnVarNameInTable="columnSUMMA_R" msprop:Generator_ColumnPropNameInRow="SUMMA_R" msprop:Generator_ColumnPropNameInTable="SUMMA_RColumn" msprop:Generator_UserColumnName="SUMMA_R" type="xs:decimal" />
+              <xs:element name="SUMMA_N" msprop:Generator_ColumnVarNameInTable="columnSUMMA_N" msprop:Generator_ColumnPropNameInRow="SUMMA_N" msprop:Generator_ColumnPropNameInTable="SUMMA_NColumn" msprop:Generator_UserColumnName="SUMMA_N" type="xs:decimal" />
+              <xs:element name="SUMMA_NR" msprop:Generator_ColumnVarNameInTable="columnSUMMA_NR" msprop:Generator_ColumnPropNameInRow="SUMMA_NR" msprop:Generator_ColumnPropNameInTable="SUMMA_NRColumn" msprop:Generator_UserColumnName="SUMMA_NR" type="xs:decimal" />
+              <xs:element name="SUMMA_SP" msprop:Generator_ColumnVarNameInTable="columnSUMMA_SP" msprop:Generator_ColumnPropNameInRow="SUMMA_SP" msprop:Generator_ColumnPropNameInTable="SUMMA_SPColumn" msprop:Generator_UserColumnName="SUMMA_SP" type="xs:decimal" />
+              <xs:element name="SUMMA_SPR" msprop:Generator_ColumnVarNameInTable="columnSUMMA_SPR" msprop:Generator_ColumnPropNameInRow="SUMMA_SPR" msprop:Generator_ColumnPropNameInTable="SUMMA_SPRColumn" msprop:Generator_UserColumnName="SUMMA_SPR" type="xs:decimal" />
+              <xs:element name="SUMMA_SPF" msprop:Generator_ColumnVarNameInTable="columnSUMMA_SPF" msprop:Generator_ColumnPropNameInRow="SUMMA_SPF" msprop:Generator_ColumnPropNameInTable="SUMMA_SPFColumn" msprop:Generator_UserColumnName="SUMMA_SPF" type="xs:decimal" />
+              <xs:element name="SUMMA_SPFR" msprop:Generator_ColumnVarNameInTable="columnSUMMA_SPFR" msprop:Generator_ColumnPropNameInRow="SUMMA_SPFR" msprop:Generator_ColumnPropNameInTable="SUMMA_SPFRColumn" msprop:Generator_UserColumnName="SUMMA_SPFR" type="xs:decimal" />
+              <xs:element name="SUMMA_RLZ" msprop:Generator_ColumnVarNameInTable="columnSUMMA_RLZ" msprop:Generator_ColumnPropNameInRow="SUMMA_RLZ" msprop:Generator_ColumnPropNameInTable="SUMMA_RLZColumn" msprop:Generator_UserColumnName="SUMMA_RLZ" type="xs:decimal" />
+              <xs:element name="SUMMA_RLZI" msprop:Generator_ColumnVarNameInTable="columnSUMMA_RLZI" msprop:Generator_ColumnPropNameInRow="SUMMA_RLZI" msprop:Generator_ColumnPropNameInTable="SUMMA_RLZIColumn" msprop:Generator_UserColumnName="SUMMA_RLZI" type="xs:decimal" />
+              <xs:element name="KDGU" msprop:Generator_ColumnVarNameInTable="columnKDGU" msprop:Generator_ColumnPropNameInRow="KDGU" msprop:Generator_ColumnPropNameInTable="KDGUColumn" msprop:Generator_UserColumnName="KDGU">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DGO_P" msprop:Generator_ColumnVarNameInTable="columnDGO_P" msprop:Generator_ColumnPropNameInRow="DGO_P" msprop:Generator_ColumnPropNameInTable="DGO_PColumn" msprop:Generator_UserColumnName="DGO_P" type="xs:decimal" />
+              <xs:element name="PR_ARH" msprop:Generator_ColumnVarNameInTable="columnPR_ARH" msprop:Generator_ColumnPropNameInRow="PR_ARH" msprop:Generator_ColumnPropNameInTable="PR_ARHColumn" msprop:Generator_UserColumnName="PR_ARH">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KDMP_STR" msprop:Generator_ColumnVarNameInTable="columnKDMP_STR" msprop:Generator_ColumnPropNameInRow="KDMP_STR" msprop:Generator_ColumnPropNameInTable="KDMP_STRColumn" msprop:Generator_UserColumnName="KDMP_STR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KCE1" msprop:Generator_ColumnVarNameInTable="columnKCE1" msprop:Generator_ColumnPropNameInRow="KCE1" msprop:Generator_ColumnPropNameInTable="KCE1Column" msprop:Generator_UserColumnName="KCE1">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIP_RDO" msprop:Generator_ColumnVarNameInTable="columnTIP_RDO" msprop:Generator_ColumnPropNameInRow="TIP_RDO" msprop:Generator_ColumnPropNameInTable="TIP_RDOColumn" msprop:Generator_UserColumnName="TIP_RDO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_RLZ" msprop:Generator_ColumnVarNameInTable="columnDATE_RLZ" msprop:Generator_ColumnPropNameInRow="DATE_RLZ" msprop:Generator_ColumnPropNameInTable="DATE_RLZColumn" msprop:Generator_UserColumnName="DATE_RLZ" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATE_RLZI" msprop:Generator_ColumnVarNameInTable="columnDATE_RLZI" msprop:Generator_ColumnPropNameInRow="DATE_RLZI" msprop:Generator_ColumnPropNameInTable="DATE_RLZIColumn" msprop:Generator_UserColumnName="DATE_RLZI" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="KOR6" msprop:Generator_ColumnVarNameInTable="columnKOR6" msprop:Generator_ColumnPropNameInRow="KOR6" msprop:Generator_ColumnPropNameInTable="KOR6Column" msprop:Generator_UserColumnName="KOR6">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STDCURR" msprop:Generator_ColumnVarNameInTable="columnSTDCURR" msprop:Generator_ColumnPropNameInRow="STDCURR" msprop:Generator_ColumnPropNameInTable="STDCURRColumn" msprop:Generator_UserColumnName="STDCURR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KFPU" msprop:Generator_ColumnVarNameInTable="columnKFPU" msprop:Generator_ColumnPropNameInRow="KFPU" msprop:Generator_ColumnPropNameInTable="KFPUColumn" msprop:Generator_UserColumnName="KFPU" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FIO_D" msprop:Generator_ColumnVarNameInTable="columnFIO_D" msprop:Generator_ColumnPropNameInRow="FIO_D" msprop:Generator_ColumnPropNameInTable="FIO_DColumn" msprop:Generator_UserColumnName="FIO_D">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_D" msprop:Generator_ColumnVarNameInTable="columnDATE_D" msprop:Generator_ColumnPropNameInRow="DATE_D" msprop:Generator_ColumnPropNameInTable="DATE_DColumn" msprop:Generator_UserColumnName="DATE_D" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FIO_O" msprop:Generator_ColumnVarNameInTable="columnFIO_O" msprop:Generator_ColumnPropNameInRow="FIO_O" msprop:Generator_ColumnPropNameInTable="FIO_OColumn" msprop:Generator_UserColumnName="FIO_O">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_K" msprop:Generator_ColumnVarNameInTable="columnDATE_K" msprop:Generator_ColumnPropNameInRow="DATE_K" msprop:Generator_ColumnPropNameInTable="DATE_KColumn" msprop:Generator_UserColumnName="DATE_K" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DOG" />
+      <xs:field xpath="mstns:KOBJ" />
+      <xs:field xpath="mstns:ORG" />
+      <xs:field xpath="mstns:KDOG" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
