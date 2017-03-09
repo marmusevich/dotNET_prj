@@ -600,11 +600,11 @@ namespace DgvFilterPopup {
             }        
         }
 
-        #endregion
 
-
-
-        public bool IsNumeric(Type type)
+        /// <summary>
+        /// is type numerical tapes
+        /// </summary>
+        private bool IsNumeric(Type type)
         {
             switch (Type.GetTypeCode(type))
             {
@@ -625,6 +625,6 @@ namespace DgvFilterPopup {
             }
         }
 
-
+        #endregion
     }
 }

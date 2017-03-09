@@ -1,3 +1,5 @@
 /ITexport/*.suo
 /ITexport/ITexport/obj
 /ITexport/ITexport/bin
+/ExternalLib/DgvFilterPopup/bin
+/ExternalLib/DgvFilterPopup/obj
