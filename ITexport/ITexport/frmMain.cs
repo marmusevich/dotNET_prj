@@ -15,6 +15,24 @@ namespace ITexport
 {
     public partial class frmMain : Form
     {
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        #region  variable
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        protected bool enable_dtpDataEvent = true;        
+
+        #endregion
+       
+        
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        #region  --
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+
+        #endregion
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        #region  form event 1
+        //---------------------------------------------------------------------------------------------------------------------------------------------
         public frmMain()
         {
             InitializeComponent();
@@ -22,98 +40,64 @@ namespace ITexport
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            dtpDataOt.Value = GeneralApp.GetFirstMonthDayDate(DateTime.Now);
-            dtpDatePo.Value = GeneralApp.GetLastMonthDayDate(DateTime.Now);
-
-
-
-
-
+            dtpDataOt.Value = SharedClass.GetFirstMonthDayDate(DateTime.Now);
+            dtpDatePo.Value = SharedClass.GetLastMonthDayDate(DateTime.Now);
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-
-
-
-        //получить дату первого дня месяца
-        public static DateTime GetFirstMonthDayDate(DateTime date)
-        {
-            return new DateTime(date.Year, date.Month, 1);
-        }
-        //получить дату последнего дня месяца
-        public static DateTime GetLastMonthDayDate(DateTime date)
-        {
-            return new DateTime(date.Year, date.Month, DateTime.DaysInMonth(date.Year, date.Month));
-        }
-
-
-
-
-
-
-
-
+        
+        
         private void dtpDataOt_ValueChanged(object sender, EventArgs e)
         {
             //if (tableWrapper != null && enable_dtpDataEvent)
             //{
-            //    tableWrapper.QueryFilter = BuildConditions();
+            ////    tableWrapper.QueryFilter = BuildConditions();
             //    Reflesh();
             //}
-
-            MessageBox.Show("dtpDataOt ! ");
-
         }
         private void dtpDatePo_ValueChanged(object sender, EventArgs e)
         {
             //if (tableWrapper != null && enable_dtpDataEvent)
             //{
-            //    tableWrapper.QueryFilter = BuildConditions();
+            ////    tableWrapper.QueryFilter = BuildConditions();
             //    Reflesh();
             //}
-
-            MessageBox.Show("dtpDatePo ! ");
         }
 
         private void btnChangePeriod(object sender, EventArgs e)
         {
-            //Button but = sender as Button;
-            //if (but != null && but.Tag != null)
-            //{
-            //    try
-            //    {
-            //        short add = Convert.ToInt16(but.Tag);
-            //        enable_dtpDataEvent = false;
-            //        dtpDataOt.Value = GeneralApp.GetFirstMonthDayDate(new DateTime(dtpDataOt.Value.Year, dtpDataOt.Value.Month + add, 15));
-            //        dtpDatePo.Value = GeneralApp.GetLastMonthDayDate(new DateTime(dtpDatePo.Value.Year, dtpDatePo.Value.Month + add, 15));
-            //        tableWrapper.QueryFilter = BuildConditions();
-            //        Reflesh();
-            //    }
-            //    catch { }
-            //    finally
-            //    {
-            //        enable_dtpDataEvent = true;
-            //    }
-            //}
-
-            MessageBox.Show("btnChangePeriod ! ");
+            Button but = sender as Button;
+            if (but != null && but.Tag != null)
+            {
+                try
+                {
+                    short add = Convert.ToInt16(but.Tag);
+                    enable_dtpDataEvent = false;
+                    dtpDataOt.Value = SharedClass.GetFirstMonthDayDate(new DateTime(dtpDataOt.Value.Year, dtpDataOt.Value.Month + add, 15));
+                    dtpDatePo.Value = SharedClass.GetLastMonthDayDate(new DateTime(dtpDatePo.Value.Year, dtpDatePo.Value.Month + add, 15));
+                    //tableWrapper.QueryFilter = BuildConditions();
+                    Reflesh();
+                }
+                catch { }
+                finally
+                {
+                    enable_dtpDataEvent = true;
+                }
+            }
         }
 
+        #endregion
 
 
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        #region  function
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        protected void Reflesh()
+        {
+            //tableWrapper.UpdateData();
+            //dgvDoc.Refresh();
+        }
 
-
-
-
-
-
-
-
+        #endregion
 
 
         public DataTable GetData(string strSQL)
@@ -136,7 +120,6 @@ namespace ITexport
             //dataGridView1.Columns["IsCheck"].Frozen = true;
         }
 
-
         private void Sample1_Load(object sender, EventArgs e)
         {
             //InitGrid();
@@ -158,6 +141,46 @@ namespace ITexport
         }
 
 
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        #region  form event 2
+        //---------------------------------------------------------------------------------------------------------------------------------------------
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbDoc_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbContractKazna_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbContractTender_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbContractAll_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvContracts_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvContracts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        #endregion
 
     }
 }

@@ -17,10 +17,10 @@ namespace ITexport
 
             if(args.Length == 0)
                 //return;
-                ITexport.dbConnect.conStringIT = "DRIVER={SQLServer};SERVER={192.168.10.8};UID={sa};PWD={291263};DATABASE={IOT};Network={DBMSSOCN};APP={IT.%DATABASE%};WSID={%WSID%}";
+                ITexport.dbConnect.conStringFromIT = "DRIVER={SQLServer};SERVER={192.168.10.8};UID={sa};PWD={291263};DATABASE={IOT};Network={DBMSSOCN};APP={IT.%DATABASE%};WSID={%WSID%}";
             else
                 foreach (string str in args)
-                    ITexport.dbConnect.conStringIT += str;
+                    ITexport.dbConnect.conStringFromIT += str;
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
