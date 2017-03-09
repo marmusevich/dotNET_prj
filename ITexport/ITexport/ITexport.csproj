@@ -44,28 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dbConnect.cs" />
-    <Compile Include="frmDogovora.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDogovora.Designer.cs">
-      <DependentUpon>frmDogovora.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="iotDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>iotDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmDogovora.resx">
-      <DependentUpon>frmDogovora.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,17 +65,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="app.config" />
-    <None Include="iotDataSet.xsc">
-      <DependentUpon>iotDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="iotDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>iotDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="iotDataSet.xss">
-      <DependentUpon>iotDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

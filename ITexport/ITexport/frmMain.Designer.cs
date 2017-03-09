@@ -28,22 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnDogovor = new System.Windows.Forms.Button();
+            this.btnContract = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.tbConn = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btnDogovor
+            // btnContract
             // 
-            this.btnDogovor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnContract.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDogovor.Location = new System.Drawing.Point(13, 13);
-            this.btnDogovor.Name = "btnDogovor";
-            this.btnDogovor.Size = new System.Drawing.Size(211, 23);
-            this.btnDogovor.TabIndex = 0;
-            this.btnDogovor.Text = "Договора";
-            this.btnDogovor.UseVisualStyleBackColor = true;
-            this.btnDogovor.Click += new System.EventHandler(this.btnDogovor_Click);
+            this.btnContract.Location = new System.Drawing.Point(13, 13);
+            this.btnContract.Name = "btnContract";
+            this.btnContract.Size = new System.Drawing.Size(211, 23);
+            this.btnContract.TabIndex = 0;
+            this.btnContract.Text = "Договора";
+            this.btnContract.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
@@ -76,8 +75,8 @@
             this.ClientSize = new System.Drawing.Size(236, 202);
             this.Controls.Add(this.tbConn);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnDogovor);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Controls.Add(this.btnContract);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Вигрузка данных в Е-Дата";
@@ -89,7 +88,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnDogovor;
+        private System.Windows.Forms.Button btnContract;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TextBox tbConn;
     }
