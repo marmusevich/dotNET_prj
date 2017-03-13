@@ -21,8 +21,60 @@ namespace ITexport
         protected bool enable_dtpDataEvent = true;        
 
         #endregion
-       
+
+
+
+        public DataTable GetData(string strSQL)
+        {
+            //OleDbDataAdapter DataAdapter = new OleDbDataAdapter(strSQL, Properties.Settings.Default.SampleDBConnectionString);
+            DataTable dtable = new DataTable();
+            //DataAdapter.Fill(dtable);
+            //DataAdapter.SelectCommand.Connection.Close();
+
+            dtable.Columns.Add("IsCheck", typeof(Boolean));
+
+            return dtable;
+        }
+
+        public void InitGrid()
+        {
+            //dataGridView1.DataSource = GetData("SELECT * FROM Orders");
+
+            //dataGridView1.Columns["IsCheck"].DisplayIndex = 0;
+            //dataGridView1.Columns["IsCheck"].Frozen = true;
+        }
+
+        private void Sample1_Load(object sender, EventArgs e)
+        {
+            //InitGrid();
+            //new DgvFilterManager(dataGridView1);
+
+
+            //this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            //col = dataGridView1.Columns["IsCheck"].Index;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //if (e.ColumnIndex == col && e.RowIndex != -1)
+            //{
+            //    object b = ((System.Windows.Forms.DataGridViewCheckBoxCell)dataGridView1.Rows[e.RowIndex].Cells[col]).EditingCellFormattedValue;
+            //    //MessageBox.Show(" row " + b);
+            //    //dataGridView1.Rows[e.RowIndex].Cells[1].Value = " row " + b;
+            //}
+        }
+
+
         
+
+
+
+
+
+
+
+
+
 
         //---------------------------------------------------------------------------------------------------------------------------------------------
         #region  --
@@ -98,48 +150,6 @@ namespace ITexport
         }
 
         #endregion
-
-
-        public DataTable GetData(string strSQL)
-        {
-            //OleDbDataAdapter DataAdapter = new OleDbDataAdapter(strSQL, Properties.Settings.Default.SampleDBConnectionString);
-            DataTable dtable = new DataTable();
-            //DataAdapter.Fill(dtable);
-            //DataAdapter.SelectCommand.Connection.Close();
-
-            dtable.Columns.Add("IsCheck", typeof(Boolean));
-
-            return dtable;
-        }
-
-        public void InitGrid()
-        {
-            //dataGridView1.DataSource = GetData("SELECT * FROM Orders");
-
-            //dataGridView1.Columns["IsCheck"].DisplayIndex = 0;
-            //dataGridView1.Columns["IsCheck"].Frozen = true;
-        }
-
-        private void Sample1_Load(object sender, EventArgs e)
-        {
-            //InitGrid();
-            //new DgvFilterManager(dataGridView1);
-
-
-            //this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            //col = dataGridView1.Columns["IsCheck"].Index;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //if (e.ColumnIndex == col && e.RowIndex != -1)
-            //{
-            //    object b = ((System.Windows.Forms.DataGridViewCheckBoxCell)dataGridView1.Rows[e.RowIndex].Cells[col]).EditingCellFormattedValue;
-            //    //MessageBox.Show(" row " + b);
-            //    //dataGridView1.Rows[e.RowIndex].Cells[1].Value = " row " + b;
-            //}
-        }
-
 
 
         //---------------------------------------------------------------------------------------------------------------------------------------------

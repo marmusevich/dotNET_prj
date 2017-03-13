@@ -261,6 +261,7 @@
             this.btnBack.Tag = "-1";
             this.btnBack.Text = "<<";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnChangePeriod);
             // 
             // btnForvard
             // 
@@ -274,6 +275,7 @@
             this.btnForvard.Tag = "+1";
             this.btnForvard.Text = ">>";
             this.btnForvard.UseVisualStyleBackColor = false;
+            this.btnForvard.Click += new System.EventHandler(this.btnChangePeriod);
             // 
             // lblDatePo
             // 
