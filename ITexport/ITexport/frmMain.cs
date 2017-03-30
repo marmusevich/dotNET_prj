@@ -22,12 +22,8 @@ namespace ITexport
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            dtpDataOt.Value = GeneralApp.GetFirstMonthDayDate(DateTime.Now);
-            dtpDatePo.Value = GeneralApp.GetLastMonthDayDate(DateTime.Now);
-
-
-
-
+            dtpDataOt.Value = GetFirstMonthDayDate(DateTime.Now);
+            dtpDatePo.Value = GetLastMonthDayDate(DateTime.Now);
 
         }
 
