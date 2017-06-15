@@ -11,6 +11,7 @@ namespace Upwork_MiniBattleShip
 {
     public partial class frmMain : Form
     {
+        //ship type
         enum ShipType
         {
             None = 0,
@@ -18,6 +19,7 @@ namespace Upwork_MiniBattleShip
             Horizontal = 2
         }
 
+        //fielf state
         class FieldDiscriptions
         {
             public bool isCliced = false;
@@ -26,12 +28,12 @@ namespace Upwork_MiniBattleShip
 
 
         // game size
-        const int SizeX = 4;
-        const int SizeY = 4;
+        const int fieldSizeX = 4;
+        const int fieldSizeY = 4;
 
-        // 
-        const int dx = 4;
-        const int dy = 4;
+        // Distance between fields
+        const int dbfx = 4;
+        const int dbfy = 4;
 
 
         //colors
@@ -40,66 +42,67 @@ namespace Upwork_MiniBattleShip
         Color shipHorizontal = Color.Red;
         Color shipVertical = Color.Black;
 
-
+        //inner counters
         int clickCount = 0;
+        int shipsCount = 0;
 
+        // array of fields
+        Label[,] lblField = new Label[fieldSizeX, fieldSizeY];
 
-        Label[,] lblField = new Label[SizeX, SizeY];
-
-
+        //create all fields
         private void createField()
         {
             pnlShips.SuspendLayout();
-            for (int i = 0; i < SizeX; i++)
+            for (int i = 0; i < fieldSizeX; i++)
             {
-                for (int j = 0; j < SizeY; j++)
+                for (int j = 0; j < fieldSizeY; j++)
                 {
                     lblField[i, j] = new Label();
-                    lblField[i, j].BackColor = blank;
                     lblField[i, j].BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
                     lblField[i, j].Name = "lblField" + i.ToString() + "_" + j.ToString();
-                    lblField[i, j].TabIndex = i + j * SizeX;
+                    lblField[i, j].TabIndex = i + j * fieldSizeX;
                     lblField[i, j].Click += new System.EventHandler(this.lblField_Click);
-                    lblField[i, j].Tag = fd[i, j];
 
+                    pnlShips.Controls.Add(lblField[i, j]);
                 }
             }
-            setFielsSize();
+            setFieldsSize();
 
             pnlShips.ResumeLayout(false);
             pnlShips.PerformLayout();
         }
 
-
-        private void setFielsSize()
+        // set size of fields or resize
+        private void setFieldsSize()
         {
-            int sx = pnlShips.ClientSize.Width / SizeX - dx;
-            int sy = pnlShips.ClientSize.Height / SizeY - dy;
+            int sx = pnlShips.ClientSize.Width / fieldSizeX - dbfx;
+            int sy = pnlShips.ClientSize.Height / fieldSizeY - dbfy;
 
-            for (int i = 0; i < SizeX; i++)
+            for (int i = 0; i < fieldSizeX; i++)
             {
-                for (int j = 0; j < SizeY; j++)
+                for (int j = 0; j < fieldSizeY; j++)
                 {
-                    lblField[i, j].Location = new Point(sx * i + dx + dx * i, sy * j + dy + dy * j);
+                    lblField[i, j].Location = new Point(sx * i + dbfx + dbfx * i, sy * j + dbfy + dbfy * j);
                     lblField[i, j].Size = new Size(sx, sy);
                 }
             }
         }
 
-
-
-
+        // get map, sips position
         FieldDiscriptions[,] getMap()
         {
-            FieldDiscriptions[,] fd = new FieldDiscriptions[SizeX, SizeY];
+            FieldDiscriptions[,] fd = new FieldDiscriptions[fieldSizeX, fieldSizeY];
 
-            for (int i = 0; i < SizeX; i++)
+            for (int i = 0; i < fieldSizeX; i++)
             {
-                for (int j = 0; j < SizeY; j++)
+                for (int j = 0; j < fieldSizeY; j++)
                 {
                     fd[i, j] = new FieldDiscriptions();
                 }
             }
+
+
+
 
             fd[1, 0].shipType = ShipType.Vertical;
             fd[1, 1].shipType = ShipType.Vertical;
@@ -110,23 +113,29 @@ namespace Upwork_MiniBattleShip
             return fd;
         }
 
+        //start / restart geme
         private void startGame()
         {
             FieldDiscriptions[,] fd = getMap();
 
-            for (int i = 0; i < SizeX; i++)
+            for (int i = 0; i < fieldSizeX; i++)
             {
-                for (int j = 0; j < SizeY; j++)
+                for (int j = 0; j < fieldSizeY; j++)
                 {
                     lblField[i, j].Tag = fd[i, j];
+                    lblField[i, j].BackColor = blank;
+
+                    if (fd[i, j].shipType == ShipType.Vertical || fd[i, j].shipType == ShipType.Horizontal)
+                        shipsCount++;
                 }
             }
 
-
+            btnStart.Text = "Re start";
+            lblGamaResult.Text = "";
             clickCount = 0;
         }
 
-
+        // chek click on field
         private void chekField(Label lbl)
         {
             FieldDiscriptions fd = lbl.Tag as FieldDiscriptions;
@@ -137,18 +146,35 @@ namespace Upwork_MiniBattleShip
                 clickCount++;
 
                 if (fd.shipType == ShipType.Horizontal)
+                {
                     lbl.BackColor = shipHorizontal;
+                    chekWin();
+                }
                 else if (fd.shipType == ShipType.Vertical)
+                {
                     lbl.BackColor = shipVertical;
+                    chekWin();
+                }
                 else
                     lbl.BackColor = see;
 
             }
         }
 
+        // check game win
+        private void chekWin()
+        {
+            shipsCount--;
+            if (shipsCount <= 0) //geme win
+            {
+                btnStart.Text = "Start";
+                lblGamaResult.Text = "You Win! Your clicked = " + clickCount.ToString();
+            }
+        }
 
         //---------------------------------------------------------------------
 
+        // event handlers
 
 
         public frmMain()
@@ -169,10 +195,14 @@ namespace Upwork_MiniBattleShip
                 chekField(lbl);
         }
 
-
         private void pnlShips_ClientSizeChanged(object sender, EventArgs e)
         {
-            setFielsSize();
+            setFieldsSize();
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            startGame();
         }
     }
 }
