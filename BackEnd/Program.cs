@@ -7,16 +7,29 @@ using System.Text;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
+
+
 namespace DecryptAnagram
 {
     class Program
     {
+
+
+        
+
+
         const string ANAGRAM = "poultry outwits ants"; // Anagram provided 
         const string TARGET_HASH = "4624d200580677270a54ccff86b9610e"; // HASH to target
         const string RAINBOW_TABLE_FILENAME = "Rainbow.txt"; // The rainbow table for find the right words
 
         static void Main(string[] args)
         {
+
+            // Matrix Rain, 3 seconds long
+            MatrixRain.StartMatrixRain(3);
+            // Matrix Rain
+
+
             Console.WriteLine("\t\t\t\t\t>>> Decrypt Anagram <<<");
             var words = File.ReadAllLines("wordlist");
             if (!File.Exists(RAINBOW_TABLE_FILENAME))   // Check if File is not exist create a file for MD5 And MAgic Words
